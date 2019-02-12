@@ -43,7 +43,7 @@ class App extends Component {
     setTimeout(()=>alert("GAME OVER AND WINNER IS PLAYER O"),1000)
     }
      // console.log(this.state.moves)
-    if(this.state.moves==9){
+    if(this.state.moves==9 && this.state.gamecontinue){
     this.setState({gamestatus:"Draw",replay:"visible"})
     setTimeout(()=>alert("GAME OVER AND RESULT IS DRAW"),1000)
     }
